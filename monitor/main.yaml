@@ -15,6 +15,7 @@ actions:
   - action: command.run
     command: echo
     args:
+      - e
       - PATH=/usr/lib/postgresql/15/bin:$PATH
-      - >>
+      - ">>"
       - /etc/profile
