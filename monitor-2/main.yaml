@@ -17,3 +17,14 @@ actions:
       - /usr/lib/postgresql/15/bin/pg_ctl
       - --pgdata
       - /var/lib/postgresql/15/data
+  - action: command.run
+    command: pg_ctl
+    args:
+      - start
+      - -D
+      - /var/lib/postgreslql/15/data
+  - action: command.run
+    commang: pg_autoctl
+    args:
+      - run
+      - &
