@@ -1,0 +1,6 @@
+actions:
+  - action: package.install
+    list:
+      - sudo
+      - postgresql-15
+      - postgresql-15-auto-failover
