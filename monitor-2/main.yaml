@@ -1,7 +1,4 @@
 actions:
-  - action: file.copy
-    from: .profile
-    to: ~/
   - action: command.run
     command: pg_autoctl
     args:
