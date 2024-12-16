@@ -26,5 +26,5 @@ actions:
       - --ssl-self-signed
       - --pgctl
       - /usr/lib/postgresql/15/bin/pg_ctl
-    env:
-      PGDATA: /var/lib/postgresql/15/data/
+      - --pgdata
+      - /var/lib/postgresql/15/data
