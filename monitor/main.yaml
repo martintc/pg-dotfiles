@@ -5,6 +5,6 @@ actions:
       - postgresql-15
       - postgresql-15-auto-failover
   - action: command.run
-    command: pg_ctl
+    command: /usr/lib/postgresql/15/bin/pg_ctl
     args:
       - stop
