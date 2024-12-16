@@ -5,10 +5,12 @@ actions:
       - postgresql-15
       - postgresql-15-auto-failover
   - action: command.run
-    command: su
+    command: runuser
     args:
+      - -u
       - postgres
-      - pg_autoctl
+      - --
+      - pg_autofailover
       - create
       - monitor
       - --auth
