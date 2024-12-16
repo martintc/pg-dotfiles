@@ -1,5 +1,9 @@
 actions:
   - action: command.run
+    command: pg_ctl
+    args:
+      - stop
+  - action: command.run
     command: pg_autoctl
     args:
       - create
