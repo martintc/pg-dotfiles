@@ -11,6 +11,6 @@ actions:
       - monitor
       - --auth trust
       - --ssl-self-signed
-      -- --pgctl /usr/lib/postgresql/15/bin/pg_ctl
+      - --pgctl /usr/lib/postgresql/15/bin/pg_ctl
     env:
       PGDATA: /var/lib/postgresql/15/data/
