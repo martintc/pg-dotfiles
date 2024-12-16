@@ -4,7 +4,7 @@ actions:
       - sudo
       - postgresql-15
       - postgresql-15-auto-failover
-  - action: director.create
+  - action: dir.create
     path: /var/lib/postgresql/15/data
   - action: command.run
     command: chown
