@@ -3,6 +3,8 @@ actions:
     command: pg_ctl
     args:
       - stop
+      - -D
+      - /var/lib/postgresql/15/main
   - action: command.run
     command: pg_autoctl
     args:

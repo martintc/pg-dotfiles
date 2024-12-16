@@ -16,4 +16,4 @@ actions:
     command: sh
     args:
       - -c
-      - 'echo export "PATH=/usr/lib/postgresql/15/bin/:$PATH" >> /etc/profile'
+      - 'echo export "PATH=/usr/lib/postgresql/15/bin:\$PATH" >> /etc/profile'
