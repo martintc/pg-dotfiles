@@ -1,7 +1,4 @@
 actions:
-  - action: file.copy
-    from: .profile
-    to: ~/.profile
   - action: package.install
     list:
       - sudo
