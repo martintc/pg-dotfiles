@@ -1,0 +1,13 @@
+actions:
+  - action: command.run
+    command: pg_autoctl
+    args:
+      - create
+      - monitor
+      - --auth
+      - trust
+      - --ssl-self-signed
+      - --pgctl
+      - /usr/lib/postgresql/15/bin/pg_ctl
+      - --pgdata
+      - /var/lib/postgresql/15/data
