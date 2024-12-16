@@ -23,7 +23,7 @@ actions:
       - start
       - -D
       - /var/lib/postgreslql/15/data
-  - action: command.run
-    commang: pg_autoctl
-    args:
-      - run
+  # - action: command.run
+  #   commang: pg_autoctl
+  #   args:
+  #     - run

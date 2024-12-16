@@ -21,4 +21,4 @@ actions:
     command: sh
     args:
       - -c
-      - 'echo export "PGDATA=/var/lib/postgres/15/data" >> /etc/profile'
+      - 'echo export "PGDATA=/var/lib/postgresql/15/data" >> /etc/profile'
