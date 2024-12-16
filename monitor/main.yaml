@@ -9,7 +9,8 @@ actions:
     args:
       - create
       - monitor
-      - --auth trust
+      - --auth
+      - trust
       - --ssl-self-signed
       - --pgctl /usr/lib/postgresql/15/bin/pg_ctl
     env:
