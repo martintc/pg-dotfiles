@@ -16,4 +16,9 @@ actions:
     command: sh
     args:
       - -c
-      - 'echo export "PATH=/usr/lib/postgresql/15/bin:\$PATH" >> /etc/profile'
+      - 'echo export "PATH=/usr/lib/postgresql/15/bin:$PATH" >> /etc/profile'
+  - action: command.run
+    command: sh
+    args:
+      - -c
+      - 'echo export "PGDATA=/var/lib/postgres/15/data" >> /etc/profile'

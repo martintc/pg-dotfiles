@@ -27,4 +27,3 @@ actions:
     commang: pg_autoctl
     args:
       - run
-      - &
