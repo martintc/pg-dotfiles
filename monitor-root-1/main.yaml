@@ -1,0 +1,20 @@
+actions:
+  - action: command.run
+    command: sh
+    args:
+      - -c
+      - 'pg_autoctl -q show systemd | tee /etc/systemd/system/pgautofailover.service'
+  - action: command.run
+    command: systemctl
+    args:
+      - daemon-reload
+  - action: command.run
+    command: systemctl
+    args:
+      - enable
+      - pgautofailover
+  - action: command.run
+    command: systemctl
+    args:
+      - start
+      - pgautofailover
