@@ -5,6 +5,12 @@ actions:
       - postgresql-15
       - postgresql-15-auto-failover
   - action: command.run
-    command: /usr/lib/postgresql/15/bin/pg_ctl
+    command: pg_autoctl
     args:
-      - stop
+      - create
+      - monitor
+      - --auth trust
+      - --ssl-self-signed
+      -- --pgctl /usr/lib/postgresql/15/bin/pg_ctl
+    env:
+      PGDATA: /var/lib/postgresql/15/data/
