@@ -10,7 +10,7 @@ actions:
       - -u
       - postgres
       - --
-      - pg_autofailover
+      - pg_autoctl
       - create
       - monitor
       - --auth
