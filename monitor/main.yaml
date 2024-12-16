@@ -4,3 +4,7 @@ actions:
       - sudo
       - postgresql-15
       - postgresql-15-auto-failover
+  - action: command.run
+    command: pg_ctl
+    args:
+      - stop
