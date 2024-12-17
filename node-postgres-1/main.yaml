@@ -11,7 +11,7 @@ actions:
       - /usr/lib/postgresql/15/bin/pg_ctl
       - --pgdata
       - /var/lib/postgresql/15/data
-      - --formatino
+      - --formation
       - test1
       - --monitor
       - "postgres://autoctl_node@172.26.188.99:5432/pg_auto_failover?sslmode=require"
