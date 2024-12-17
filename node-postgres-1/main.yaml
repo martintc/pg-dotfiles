@@ -8,7 +8,7 @@ actions:
       - trust
       - --ssl-self-signed
       - --name
-      - debian-node-1
+      - 172.26.182.200
       - --username
       - paladinadmin
       - --dbname
