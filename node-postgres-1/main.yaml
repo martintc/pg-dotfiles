@@ -8,7 +8,7 @@ actions:
       - trust
       - --ssl-self-signed
       - --name
-      - node_one
+      - debian-node-1
       - --username
       - paladinadmin
       - --dbname
@@ -17,7 +17,9 @@ actions:
       - /usr/lib/postgresql/15/bin/pg_ctl
       - --pgdata
       - /var/lib/postgresql/15/data
+      - --pgport
+      - 5432
       - --formation
       - formation_one
       - --monitor
-      - "postgres://autoctl_node@172.26.188.99:5432/pg_auto_failover?sslmode=require"
+      - postgres://autoctl_node@172.26.188.99:5432/pg_auto_failover?sslmode=require
