@@ -1,0 +1,17 @@
+actions:
+  - action: command.run
+    command: pg_autoctl
+    args:
+      - create
+      - postgres
+      - --auth
+      - trust
+      - --ssl-self-signed
+      - --pgctl
+      - /usr/lib/postgresql/15/bin/pg_ctl
+      - --pgdata
+      - /var/lib/postgresql/15/data
+      - --formatino
+      - test1
+      - --monitor
+      - "postgres://autoctl_node@172.26.188.99:5432/pg_auto_failover?sslmode=require"
