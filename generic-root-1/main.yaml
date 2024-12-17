@@ -22,3 +22,13 @@ actions:
     args:
       - -c
       - 'echo export "PGDATA=/var/lib/postgresql/15/data" >> /etc/profile'
+  - action: command.run
+    command: systemctl
+    args:
+      - stop
+      - postgresql.service
+  - action: command.run
+    command: systemctl
+    args:
+      - disable
+      - postgresql.service

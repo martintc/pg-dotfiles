@@ -18,13 +18,3 @@ actions:
     args:
       - start
       - pgautofailover
-  - action: command.run
-    command: systemctl
-    args:
-      - stop
-      - postgresql.service
-  - action: command.run
-    command: systemctl
-    args:
-      - disable
-      - postgresql.service
