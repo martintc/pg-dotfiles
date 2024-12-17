@@ -13,6 +13,8 @@ actions:
       - paladinadmin
       - --dbname
       - ecom
+      - --hostname
+      - 172.26.182.200
       - --pgctl
       - /usr/lib/postgresql/15/bin/pg_ctl
       - --pgdata
@@ -20,4 +22,4 @@ actions:
       - --formation
       - formation_one
       - --monitor
-      - postgres://autoctl_node@172.26.188.99:5432/pg_auto_failover?sslmode=require
+      - 'postgres://autoctl_node@172.26.188.99:5432/pg_auto_failover?sslmode=require'
