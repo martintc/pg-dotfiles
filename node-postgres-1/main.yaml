@@ -8,13 +8,13 @@ actions:
       - trust
       - --ssl-self-signed
       - --name
-      - 172.26.182.200
+      - 172.26.182.201
       - --username
       - paladinadmin
       - --dbname
       - ecom
       - --hostname
-      - 172.26.182.200
+      - 172.26.182.201
       - --pgctl
       - /usr/lib/postgresql/15/bin/pg_ctl
       - --pgdata
