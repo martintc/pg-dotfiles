@@ -7,6 +7,6 @@ actions:
       - --pgdata
       - /var/lib/postgresql/15/data
       - --kind
-      - psql
+      - pgsql
       - --formation
       - formation_one
