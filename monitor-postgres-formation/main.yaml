@@ -1,0 +1,12 @@
+actions:
+  - action: command.run
+    command: pg_autoctl
+    args:
+      - create
+      - formation
+      - --pgdata
+      - /var/lib/postgresql/15/data
+      - --kind
+      - psql
+      - --formation
+      - formation_one
