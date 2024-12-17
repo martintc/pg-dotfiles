@@ -23,3 +23,8 @@ actions:
     args:
       - stop
       - postgresql.service
+  - action: command.run
+    command: systemctl
+    args:
+      - disable
+      - postgresql.service
