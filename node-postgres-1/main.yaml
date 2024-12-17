@@ -17,8 +17,6 @@ actions:
       - /usr/lib/postgresql/15/bin/pg_ctl
       - --pgdata
       - /var/lib/postgresql/15/data
-      - --pgport
-      - 5432
       - --formation
       - formation_one
       - --monitor
