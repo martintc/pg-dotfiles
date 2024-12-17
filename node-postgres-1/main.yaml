@@ -21,7 +21,5 @@ actions:
       - /var/lib/postgresql/15/data
       - --formation
       - formation_one
-      - --group
-      - 0
       - --monitor
       - 'postgres://autoctl_node@172.26.188.99:5432/pg_auto_failover?sslmode=require'
