@@ -9,7 +9,8 @@ actions:
       - --ssl-self-signed
       - --name
       - node_one
-      - --username paladinadmin
+      - --username
+      - paladinadmin
       - --dbname
       - ecom
       - --pgctl
