@@ -9,4 +9,6 @@ actions:
       - --kind
       - pgsql
       - --formation
-      - formation_one
+      - formation_two
+      - --dbname
+      - ecom
